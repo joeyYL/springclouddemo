@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="service-feign" />
         <module name="service-hi" />
-        <module name="springclouddemo" />
+        <module name="service-ribbon" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="servicefeign" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

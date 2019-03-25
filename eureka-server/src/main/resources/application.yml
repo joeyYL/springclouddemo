@@ -1,17 +1,3 @@
 spring:
-  application:
-    name: eurka-server
-
-server:
-  port: 8761
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#  server:
-#    enable-self-preservation: false #关闭自我保护，注册中心将不可用的实例删除
+  profiles:
+    active: dev

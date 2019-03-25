@@ -1,9 +1,14 @@
 spring:
   application:
-    name: service-hi
+    name: service-feign
+
+
+feign:
+  hystrix:
+    enabled: true
 
 server:
-  port: 9002
+  port: 9004
 
 eureka:
   client:
