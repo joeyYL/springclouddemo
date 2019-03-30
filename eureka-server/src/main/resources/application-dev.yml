@@ -11,8 +11,9 @@ eureka:
 #    hostname: localhost
   client:
     registerWithEureka: true  #是否向服务注册中心注册自己
-    fetchRegistry: true  #是否检索服务
+    fetchRegistry: false  #是否检索服务
     serviceUrl:
-      defaultZone: http://192.168.200.133:8762/eureka/,http://192.168.200.1:8761/eureka/
+      defaultZone: http://192.168.200.1:8761/eureka/
+#      defaultZone: http://192.168.200.133:8762/eureka/,http://192.168.200.1:8761/eureka/
 #  server:
 #    enable-self-preservation: false #关闭自我保护，注册中心将不可用的实例删除
